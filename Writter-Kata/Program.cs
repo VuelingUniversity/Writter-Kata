@@ -6,7 +6,8 @@ namespace Writter_Kata
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var container = new Container();
+            container.Factory.GetWritter("json").Write("Archivo");
         }
     }
 }

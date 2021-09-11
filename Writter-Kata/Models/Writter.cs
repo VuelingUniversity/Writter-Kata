@@ -12,8 +12,8 @@ namespace Writter_Kata
             _formater = formater;
         }
 
-        public void Write() { 
-           
+        public void Write(string fileName) {
+            Console.WriteLine($"{fileName}.{_formater.GetExtension()} : {_formater.GetContent()}");
         }
     }
 }
