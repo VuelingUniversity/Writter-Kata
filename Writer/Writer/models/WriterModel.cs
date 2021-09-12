@@ -4,11 +4,11 @@ using System.Text;
 
 namespace WriterKata.models
 {
-    class Writer
+    class WriterModel
     {
         public string formatName;
 
-        public Writer(Format format)
+        public WriterModel(Format format)
         {
             this.formatName = format.extension;
         }

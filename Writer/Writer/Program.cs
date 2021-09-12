@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
+using Writer.services;
 using WriterKata.models;
 
 namespace WriterKata
@@ -8,14 +10,21 @@ namespace WriterKata
     {
         static void Main(string[] args)
         {
-            Dictionary<string, Format> formatList = new Dictionary<string, Format>();
-            formatList.Add("json", new JsonFormatter());
-            formatList.Add("txt", new TxtFormatter());
-            formatList.Add("xml", new XmlFormatter());
-            Factory factory = new Factory(formatList);
-            Writer w = factory.createWriter("json");
-            w.Write("HolaMundo");
 
+            var serviceProvider = Container.Build();
+            serviceProvider.GetService<IFactory>().PrintDictionary();
+            Console.WriteLine("\nEscribe la extensión del archivo que quieras crear");
+            string extension = Console.ReadLine();
+            Console.WriteLine("\nEscribe el nombre de archivo para crearlo");
+            string fileName = Console.ReadLine();
+
+            try {
+            WriterModel w = serviceProvider.GetService<IFactory>().CreateWriter(extension);
+            w.Write(fileName);
+            } catch(KeyNotFoundException) 
+            {
+                Console.WriteLine("La extensión que has introducido no pertenece a un formato de archivo válido");
+            }
         }
     }
 }

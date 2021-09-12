@@ -5,18 +5,32 @@ using WriterKata.models;
 
 namespace WriterKata.models
 {
-    class Factory
+    class Factory : IFactory
     {
-        private readonly Dictionary<string, Format> _formatList;
+        private readonly Dictionary<string, Format> _formatList = setFormatList();
 
-        public Factory(Dictionary<string, Format> formatList)
+        private static Dictionary<string, Format> setFormatList ()
         {
-            _formatList = formatList;
+            Dictionary<string, Format> formatList = new Dictionary<string, Format>();
+            formatList.Add("json", new JsonFormatter());
+            formatList.Add("txt", new TxtFormatter());
+            formatList.Add("xml", new XmlFormatter());
+            return formatList;
         }
-        
-        public Writer createWriter(string format)
+
+
+        public WriterModel CreateWriter(string format)
         {
-            return new Writer(_formatList[format]);
+            return new WriterModel(_formatList[format]);
+        }
+
+        public void PrintDictionary()
+        {
+            Console.WriteLine("Formatos disponibles:");
+            foreach (var v in _formatList)
+            {
+                Console.WriteLine($"\tArchivo {v.Key}");
+            }
         }
     }
 }
