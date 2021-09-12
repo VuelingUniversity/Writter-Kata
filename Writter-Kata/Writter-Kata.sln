@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Writter-Kata", "Writter-Kata\Writter-Kata.csproj", "{FB590A76-35AC-4DF4-BAEB-0C8C0CE446F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Writter-Kata", "Writter-Kata\Writter-Kata.csproj", "{FB590A76-35AC-4DF4-BAEB-0C8C0CE446F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WritterKatta.Test", "WritterKatta.Test\WritterKatta.Test.csproj", "{D30598FB-7C77-4B52-A4A2-FEDFF086C66F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Writter-Kata.Test", "Writter-Kata.Test\Writter-Kata.Test.csproj", "{30179158-A7EA-4706-9909-17883042E109}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{FB590A76-35AC-4DF4-BAEB-0C8C0CE446F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB590A76-35AC-4DF4-BAEB-0C8C0CE446F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB590A76-35AC-4DF4-BAEB-0C8C0CE446F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D30598FB-7C77-4B52-A4A2-FEDFF086C66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D30598FB-7C77-4B52-A4A2-FEDFF086C66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D30598FB-7C77-4B52-A4A2-FEDFF086C66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D30598FB-7C77-4B52-A4A2-FEDFF086C66F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30179158-A7EA-4706-9909-17883042E109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30179158-A7EA-4706-9909-17883042E109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30179158-A7EA-4706-9909-17883042E109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30179158-A7EA-4706-9909-17883042E109}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
