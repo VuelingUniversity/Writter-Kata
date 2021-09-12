@@ -13,7 +13,9 @@ namespace Writter_Kata.ContainerFactory
                 = new Dictionary<FormatType, IFormat> {
                 { FormatType.json, new JsonFormat()},
                 { FormatType.txt, new TxtFormat()},
-                { FormatType.xml, new XmlFormat()}};
+                { FormatType.xml, new XmlFormat()},
+                { FormatType.yml, new YmlFormat()}
+                };
 		public static IFormat CreateChecker(FormatType format)
 		{
 		    return format_creators[format];

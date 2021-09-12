@@ -9,6 +9,7 @@ namespace Writter_Kata.Enum
 		xml,
 		txt,
 		json,
+		yml
 	}
 }
 
