@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using WriterKata.models;
+using Writer.interfaces;
 
 namespace Writer.services
 {

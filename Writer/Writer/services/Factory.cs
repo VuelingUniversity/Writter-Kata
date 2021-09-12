@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WriterKata.models;
+using Writer.interfaces;
+using Writer.models;
 
-namespace WriterKata.models
+namespace Writer.services
 {
     class Factory : IFactory
     {

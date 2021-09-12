@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WriterKata.models
+namespace Writer.models
 {
-    abstract class Format
+    public abstract class Format
     {
         public string extension;
     }

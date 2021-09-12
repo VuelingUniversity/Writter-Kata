@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WriterKata.models
+namespace Writer.models
 {
     class JsonFormatter : Format
     {

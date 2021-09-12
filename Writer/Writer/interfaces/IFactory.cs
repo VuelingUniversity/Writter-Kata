@@ -1,8 +1,10 @@
-﻿namespace WriterKata.models
+﻿using Writer.models;
+
+namespace Writer.interfaces
 {
-    interface IFactory
+    public interface IFactory
     {
-        WriterModel CreateWriter(string format);
+        public WriterModel CreateWriter(string format);
         void PrintDictionary();
 
     }

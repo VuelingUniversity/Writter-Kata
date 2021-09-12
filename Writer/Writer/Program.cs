@@ -2,7 +2,8 @@
 using System;
 using System.Collections.Generic;
 using Writer.services;
-using WriterKata.models;
+using Writer.models;
+using Writer.interfaces;
 
 namespace WriterKata
 {
