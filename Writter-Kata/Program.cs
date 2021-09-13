@@ -6,7 +6,13 @@ namespace Writter_Kata
     {
         static void Main(string[] args)
         {
-            var container = new Container();
+            
+            Console.WriteLine(@"Where do you want to write)
+1. File
+2. Cloud");
+            int option;
+            Int32.TryParse(Console.ReadLine(), out option);
+            var container = new Container(option);
             container.Factory.GetWritter("json").Write("Archivo");
             container.Factory.GetWritter("txt").Write("Archivo");
             container.Factory.GetWritter("xml").Write("Archivo");

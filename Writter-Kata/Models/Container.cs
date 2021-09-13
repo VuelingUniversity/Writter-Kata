@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Writter_Kata.Interfaces;
 
 namespace Writter_Kata
 {
@@ -12,11 +13,23 @@ namespace Writter_Kata
             {"xml", new XmlFormater() },
             {"yml", new YmlFormater() }
         };
-        public Factory Factory;
-        public Container()
+        public IFactoryable Factory;
+        
+        public Container(int option )
         {
-            Factory = new Factory(FormatersList);
+            Factory = IsCloud(option);
         }
+
+        private IFactoryable IsCloud(int option)
+        {
+            if (option == 2)
+            {
+                return new FactoryCloud(FormatersList);
+            }
+            return  new Factory(FormatersList);
+        }
+
+
 
     }
 }
