@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Writter_Kata.Enum;
 
 namespace Writter_Kata.Interfaces
 {
-    public interface IFormat
+    public interface IWriter
     {
-      public string ConversionDoc(string fileName);
        
     }
 }

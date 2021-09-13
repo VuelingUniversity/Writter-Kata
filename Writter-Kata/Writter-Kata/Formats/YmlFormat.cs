@@ -8,9 +8,11 @@ namespace Writter_Kata.Formats
 {
     public class YmlFormat : IFormat
     {
-        public string ConversionDoc(string file, FormatType ext)
-        {
-            throw new NotImplementedException();
-        }
+        
+            public string ConversionDoc(string fileName)
+            {
+                return fileName + ".yml";
+            }
+        
     }
 }

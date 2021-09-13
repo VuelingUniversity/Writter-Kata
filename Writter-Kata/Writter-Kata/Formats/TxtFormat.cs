@@ -8,9 +8,9 @@ namespace Writter_Kata.Formats
 {
     public class TxtFormat : IFormat
     {
-        public string ConversionDoc(string file, FormatType ext)
+        public string ConversionDoc(string fileName)
         {
-            throw new NotImplementedException();
+            return fileName + ".txt";
         }
     }
 }

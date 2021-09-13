@@ -4,6 +4,7 @@ using System.Text;
 using Writter_Kata.Enum;
 using Writter_Kata.Formats;
 using Writter_Kata.Interfaces;
+using Writter_Kata.Models;
 
 namespace Writter_Kata.ContainerFactory
 {
@@ -16,9 +17,9 @@ namespace Writter_Kata.ContainerFactory
                 { FormatType.xml, new XmlFormat()},
                 { FormatType.yml, new YmlFormat()}
                 };
-		public static IFormat CreateChecker(FormatType format)
+		public static IWriter CreateWriter(FormatType format)
 		{
-		    return format_creators[format];
-		}
+		    return new Writer(format_creators[format]);
+		} 
 	}
 }

@@ -8,9 +8,9 @@ namespace Writter_Kata.Formats
 {
     public class XmlFormat : IFormat
     {
-        public string ConversionDoc(string file, FormatType ext)
+        public string ConversionDoc(string fileName)
         {
-            throw new NotImplementedException();
+            return fileName + ".xml";
         }
     }
 }

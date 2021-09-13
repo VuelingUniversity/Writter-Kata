@@ -1,12 +1,14 @@
 ﻿using System;
+using Writter_Kata.ContainerFactory;
+using Writter_Kata.Interfaces;
 
 namespace Writter_Kata
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)           
         {
-            Console.WriteLine("Hello World!");
+            IWriter writer = WritterFactory.CreateWriter(Enum.FormatType.json);
         }
     }
 }
