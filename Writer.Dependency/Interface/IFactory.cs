@@ -5,9 +5,9 @@ using Writer.Dependency.Models.Enums;
 
 namespace Writer.Dependency.Interface
 {
-    interface IFactory
+    public interface IFactory
     {
         public IWriter GetWriter(FormaterOptions option);
-
+        
     }
 }

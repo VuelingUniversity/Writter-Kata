@@ -13,7 +13,7 @@ namespace Writer.Test
         {
             IFormater formater = GetFormater();
             var Writer = new Writer.Dependency.Models.Writer(formater);
-            var res = Writer.Write();
+            var res = Writer.Write(string.Empty);
             
         }
 
