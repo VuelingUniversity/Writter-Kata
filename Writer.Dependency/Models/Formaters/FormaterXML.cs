@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using Writer.Dependency.Interface;
 
-namespace Writer.Dependency.Models
+namespace Writer.Dependency.Models.Formaters
 {
     public class FormaterXML : IFormater
     {
-
+        public string GetFormater()
+        {
+            return ".xml";
+        }
     }
 }

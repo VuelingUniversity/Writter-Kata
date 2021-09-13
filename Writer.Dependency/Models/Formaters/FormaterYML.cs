@@ -7,6 +7,9 @@ namespace Writer.Dependency.Models.Formaters
 {
     public class FormaterYML : IFormater
     {
-
+        public string GetFormater()
+        {
+            return ".yml";
+        }
     }
 }

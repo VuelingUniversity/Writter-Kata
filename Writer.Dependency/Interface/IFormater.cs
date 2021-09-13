@@ -6,6 +6,6 @@ namespace Writer.Dependency.Interface
 {
     public interface IFormater
     {
-
+        public string GetFormater();
     }
 }
