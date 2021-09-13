@@ -5,19 +5,17 @@ using Writter_Kata.Interfaces;
 
 namespace Writter_Kata.Models
 {
-    public class Writer : IWriter
+    public class Clouder : IWriter
     {
         private IFormat formater;
-       
-        public Writer(IFormat formater)
+
+        public Clouder(IFormat formater)
         {
-            this.formater=formater;
+            this.formater = formater;
         }
-        
         public string Write(string filename)
         {
             return formater.ConversionDoc(filename);
         }
-
     }
 }
