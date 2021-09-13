@@ -5,12 +5,12 @@ using Writter.Interfaces;
 
 namespace Writter.Models
 {
-    public class Writter : IFormateable
+    class Writter 
     {
         //llama interfaz y crea objeto tipo de interfaz
         private IFormateable _formatType;
             //crea objeto ttipo writer donde pasa la interfaz
-            public Writter(IFormateable formatType)
+        public Writter(IFormateable formatType)
         {
             _formatType = formatType;
         }

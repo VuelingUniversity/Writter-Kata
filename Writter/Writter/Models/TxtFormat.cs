@@ -7,5 +7,14 @@ namespace Writter.Models
 {
     class TxtFormat : IFormateable
     {
+        public string GetContent()
+        {
+            return "Contenido en formato txt";
+        }
+
+        public string GetExtension()
+        {
+            return "txt";
+        }
     }
 }
