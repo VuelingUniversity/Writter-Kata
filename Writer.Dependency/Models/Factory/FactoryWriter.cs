@@ -6,11 +6,11 @@ using Writer.Dependency.Models.Enums;
 
 namespace Writer.Dependency.Models
 {
-    public class FactoryWriters
+    public class FactoryWriter
     {
         private readonly Dictionary<FormaterOptions, IFormater> _formatDictionary;
 
-        public FactoryWriters(Dictionary<FormaterOptions, IFormater> dictionary)
+        public FactoryWriter(Dictionary<FormaterOptions, IFormater> dictionary)
         {
             _formatDictionary = dictionary;
         }
