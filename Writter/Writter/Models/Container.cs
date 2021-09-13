@@ -7,6 +7,7 @@ namespace Writter.Models
 {
     class Container
     {
+        //Diccionario para guardar los formatos de los archivos (string para el nombre, iniciar objeto)
         public Dictionary<string, IFormateable> ListFormat = new Dictionary<string, IFormateable>
         {
             {".json", new JsonFormat() },
