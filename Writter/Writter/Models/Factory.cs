@@ -8,7 +8,7 @@ namespace Writter.Models
     class Factory
     {
         //se crea el dictionary con el key value
-        private Dictionary<string, IFormateable> _ListFormat;
+        private readonly Dictionary<string, IFormateable> _ListFormat;
         //En el constructor de factory le paso el dictionary
         public Factory(Dictionary<string, IFormateable> extensionsList)
         {

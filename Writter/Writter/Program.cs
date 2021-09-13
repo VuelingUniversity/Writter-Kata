@@ -11,7 +11,7 @@ namespace Writter
         {
             //inicia un objeto contenedor el cual recibe un objeto de factory(GetWritter) y otro de Writter (Writte)
             var container = new Container();
-            container.Factory.GetWritter("json").Write("Archivo");
+            container.Factory.GetWritter(".json").Write("Archivo");
 
             
             
