@@ -7,5 +7,9 @@ namespace Writer.Dependency.Models.Formaters
 {
     public class FormaterPlain : IFormater
     {
+        public string GetFormater()
+        {
+            return ".txt";
+        }
     }
 }

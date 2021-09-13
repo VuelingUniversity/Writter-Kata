@@ -4,13 +4,14 @@ using System.Text;
 using Writer.Dependency.Interface;
 using Writer.Dependency.Models.Enums;
 
-namespace Writer.Dependency.Models
+namespace Writer.Dependency.Models.Factory
 {
-    public class FactoryWriters
+    public class CloudWritting : IFactory
     {
-        private Dictionary<FormaterOptions, IFormater> _formatersDicts;
+        private readonly Dictionary<FormaterOptions, IFormater> _formatersDicts;
 
-        public FactoryWriters(Dictionary<FormaterOptions, IFormater> dic)
+
+        public CloudWritting(Dictionary<FormaterOptions, IFormater> dic)
         {
             _formatersDicts = dic;
         }
@@ -18,6 +19,6 @@ namespace Writer.Dependency.Models
         {
             return new Writer(_formatersDicts[option]);
         }
+
     }
-    
 }

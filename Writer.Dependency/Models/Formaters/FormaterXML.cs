@@ -5,8 +5,11 @@ using Writer.Dependency.Interface;
 
 namespace Writer.Dependency.Models
 {
-    public class FormaterXML : IFormater
+    public class FormaterXml : IFormater
     {
-
+        public string GetFormater()
+        {
+            return ".xml";
+        }
     }
 }

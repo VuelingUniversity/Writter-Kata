@@ -5,8 +5,11 @@ using Writer.Dependency.Interface;
 
 namespace Writer.Dependency.Models.Formaters
 {
-    public class FormaterYML : IFormater
+    public class FormaterYml : IFormater
     {
-
+        public string GetFormater()
+        {
+            return ".yml";
+        }
     }
 }
