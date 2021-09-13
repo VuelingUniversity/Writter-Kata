@@ -8,7 +8,8 @@ namespace Writter_Kata
     {
         static void Main(string[] args)           
         {
-            IWriter writer = WritterFactory.CreateWriter(Enum.FormatType.json);
+            IWriter writer = WritterFactory.CreateWriter(Enum.FormatType.json);           
+            Console.WriteLine(writer.Write("Documento"));
         }
     }
 }

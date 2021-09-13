@@ -12,5 +12,10 @@ namespace Writter_Kata.Models
         {
             this.formater=formater;
         }
+
+        public string Write(string filename)
+        {
+            return formater.ConversionDoc(filename);
+        }
     }
 }
