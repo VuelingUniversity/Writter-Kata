@@ -6,8 +6,4 @@
     <RootNamespace>Writter_Kata</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
