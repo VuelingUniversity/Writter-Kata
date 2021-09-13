@@ -7,6 +7,9 @@ namespace Writer.Dependency.Models
 {
     public class FormaterXML : IFormater
     {
-
+        public string GetFormater()
+        {
+            return ".xml";
+        }
     }
 }

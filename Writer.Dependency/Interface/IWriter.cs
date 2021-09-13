@@ -6,5 +6,6 @@ namespace Writer.Dependency.Interface
 {
     public interface IWriter
     {
+        public string Write(string msg);
     }
 }

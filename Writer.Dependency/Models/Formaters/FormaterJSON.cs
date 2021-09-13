@@ -6,8 +6,11 @@ using Writer.Dependency.Interface;
 namespace Writer.Dependency.Models
 {
     public class FormaterJSON : IFormater
-    { 
-    
+    {
+        public string GetFormater()
+        {
+            return ".json";
+        }
     }
 }
 

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Writer.Dependency.Models.Enums;
 
 namespace Writer.Dependency.Interface
 {
-    public interface IFormater
+    interface IFactory
     {
-        public string GetFormater();
+        public IWriter GetWriter(FormaterOptions option);
 
     }
 }
