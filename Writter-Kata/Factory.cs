@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Writter_Kata.Interfaces;
 
 namespace Writter_Kata
 {
@@ -12,7 +13,7 @@ namespace Writter_Kata
             _formatersList = formatersList;
         }
 
-        public Writter GetWritter(string formater) {
+        public IWritteable GetWritter(string formater) {
             return new Writter(_formatersList[formater]);
                 
         }

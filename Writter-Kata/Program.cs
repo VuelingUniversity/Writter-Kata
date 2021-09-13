@@ -8,6 +8,9 @@ namespace Writter_Kata
         {
             var container = new Container();
             container.Factory.GetWritter("json").Write("Archivo");
+            container.Factory.GetWritter("txt").Write("Archivo");
+            container.Factory.GetWritter("xml").Write("Archivo");
+            container.Factory.GetWritter("yml").Write("Archivo");
         }
     }
 }
