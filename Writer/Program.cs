@@ -11,14 +11,7 @@ namespace Writer
     {
         static void Main(string[] args)
         {
-            Dictionary<FormaterOptions, IFormater> dictFormaters = new Dictionary<FormaterOptions, IFormater>();
-            dictFormaters.Add(FormaterOptions.Json, new FormaterJSON());
-            dictFormaters.Add(FormaterOptions.Plain, new FormaterPlain());
-            dictFormaters.Add(FormaterOptions.Xml, new FormaterXML());
-            dictFormaters.Add(FormaterOptions.Yml, new FormaterYML());
-            
-            FactoryWriters factory = new FactoryWriters(dictFormaters);
-
+           
             while (true)
             {
                 Console.WriteLine("Donde quieres escribir el archivo en cloud o local");
@@ -29,6 +22,7 @@ namespace Writer
                     Console.WriteLine("Lo has escrito mal: (cloud/local)");
                     res = Console.ReadLine();
                 }
+                var factory = new WriterProvider(res).GetFactory();
 
                 Console.WriteLine("Que nombre le quieres poner al archivo");
                 string nombre = Console.ReadLine();

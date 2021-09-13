@@ -6,11 +6,11 @@ using Writer.Dependency.Models.Enums;
 
 namespace Writer.Dependency.Models
 {
-    public class FactoryWriters
+    public class FactoryWriterLocal :IFactory
     {
         private Dictionary<FormaterOptions, IFormater> _formatersDicts;
 
-        public FactoryWriters(Dictionary<FormaterOptions, IFormater> dic)
+        public FactoryWriterLocal(Dictionary<FormaterOptions, IFormater> dic)
         {
             _formatersDicts = dic;
         }
