@@ -8,7 +8,7 @@ namespace Writer.Dependency.Models.Factory
 {
     public class LocalWritting : IFactory
     {
-        private Dictionary<FormaterOptions, IFormater> _formatDictionary;
+        private readonly Dictionary<FormaterOptions, IFormater> _formatDictionary;
 
         public LocalWritting(Dictionary<FormaterOptions, IFormater> dictionary)
         {

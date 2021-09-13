@@ -8,16 +8,15 @@ namespace Writer.Dependency.Models.Factory
 {
     public class CloudWritting : IFactory
     {
-        private readonly Dictionary<FormaterOptions, IFormater> _formatersDicts;
+        private readonly Dictionary<FormaterOptions, IFormater> _formatDictionary;
 
-
-        public CloudWritting(Dictionary<FormaterOptions, IFormater> dic)
+        public CloudWritting(Dictionary<FormaterOptions, IFormater> dictionary)
         {
-            _formatersDicts = dic;
+            _formatDictionary = dictionary;
         }
         public IWriter GetWriter(FormaterOptions option)
         {
-            return new Writer(_formatersDicts[option]);
+            return new Writer(_formatDictionary[option]);
         }
 
     }
