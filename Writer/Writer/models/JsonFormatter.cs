@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writer.models
 {
-    class JsonFormatter : Format
+    public class JsonFormatter : Format
     {
         public JsonFormatter()
         {

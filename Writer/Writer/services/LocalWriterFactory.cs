@@ -6,20 +6,14 @@ using Writer.models;
 
 namespace Writer.services
 {
-    class Factory : IFactory
+    public class LocalWriterFactory : IFactory
     {
-        private readonly Dictionary<string, Format> _formatList = setFormatList();
+        private readonly Dictionary<string, Format> _formatList;
 
-        private static Dictionary<string, Format> setFormatList ()
+        public LocalWriterFactory (Dictionary<string, Format> formatList)
         {
-            Dictionary<string, Format> formatList = new Dictionary<string, Format>();
-            formatList.Add("json", new JsonFormatter());
-            formatList.Add("txt", new TxtFormatter());
-            formatList.Add("xml", new XmlFormatter());
-            return formatList;
+            _formatList = formatList;
         }
-
-
         public WriterModel CreateWriter(string format)
         {
             return new WriterModel(_formatList[format]);
