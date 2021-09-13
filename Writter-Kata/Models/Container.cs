@@ -25,8 +25,11 @@ namespace Writter_Kata
             if (option == 2)
             {
                 return new FactoryCloud(FormatersList);
+            } else if(option == 1)
+            {
+                return new Factory(FormatersList);
             }
-            return  new Factory(FormatersList);
+            throw new Exception("Invalid option");
         }
 
 

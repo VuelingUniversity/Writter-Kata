@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata
 {
-    class YmlFormater : IFormatable
+    public class YmlFormater : IFormatable
     {
         public string GetContent()
         {

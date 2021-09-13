@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata
 {
-    class JsonFormater : IFormatable
+   public class JsonFormater : IFormatable
     {
         public string GetContent()
         {

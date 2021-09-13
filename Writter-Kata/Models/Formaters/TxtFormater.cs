@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Writter_Kata
 {
-    class TxtFormater : IFormatable
+   public class TxtFormater : IFormatable
     {
         public string GetContent()
         {
