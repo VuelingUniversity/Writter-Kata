@@ -7,9 +7,11 @@ namespace Writter.Models
 {
     class Writter 
     {
-        //llama interfaz y crea objeto tipo de interfaz
+        //llama interfaz y crea objeto tipo de interfaz donde accede a todas las clases
+        //que tienen implementado esta interfaz 
         private IFormateable _formatType;
-            //crea objeto ttipo writer donde pasa la interfaz
+
+            //crea objeto tipo writer donde pasa la interfaz
         public Writter(IFormateable formatType)
         {
             _formatType = formatType;
