@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Writter_Kata.Interfaces;
+using Writter_Kata.Models;
 
 namespace Writter_Kata
 {
@@ -15,14 +16,9 @@ namespace Writter_Kata
 
         public IWritteable GetWritter(string formater)
         {
-            SayHello();
-            return new Writter(_formatersList[formater]);
-
+            return new WritterCloud(_formatersList[formater]);
         }
 
-        private void SayHello()
-        {
-            Console.WriteLine("Hello from cloud");
-        }
+        
     }
 }

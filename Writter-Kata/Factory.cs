@@ -14,14 +14,9 @@ namespace Writter_Kata
         }
 
         public IWritteable GetWritter(string formater) {
-            SayHello();
-            return new Writter(_formatersList[formater]);
-                
+            return new Writter(_formatersList[formater]);      
         }
-        private void SayHello()
-        {
-            Console.WriteLine("Hello from local");
-        }
+        
 
     }
 }

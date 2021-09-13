@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using Writter_Kata.Interfaces;
 
-namespace Writter_Kata
+namespace Writter_Kata.Models
 {
-    public class Writter : IWritteable
+    public class WritterCloud : IWritteable
     {
         private IFormatable _formater;
-        public Writter(IFormatable formater)
+        public WritterCloud(IFormatable formater)
         {
             _formater = formater;
         }
 
-        public void Write(string fileName) {
-            Console.WriteLine("Hello from local");
+        public void Write(string fileName)
+        {
+            Console.WriteLine("Hello from cloud");
             Console.WriteLine($"{fileName}.{_formater.GetExtension()} : {_formater.GetContent()}");
         }
     }
