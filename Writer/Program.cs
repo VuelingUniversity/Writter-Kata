@@ -27,7 +27,7 @@ namespace Writer
                 Console.WriteLine("Que nombre le quieres poner al archivo");
                 string nombre = Console.ReadLine();
 
-                Console.WriteLine($"Que formato tiene el archivo {nombre}: (json/plain/xml/yml)");
+                Console.WriteLine($"Que formato quiers ponerle al archivo {nombre}: (json/plain/xml/yml)");
                 string formatString = Console.ReadLine();
                 while (formatString != "json" && formatString != "plain" && formatString != "xml" && formatString != "yml")
                 {
@@ -39,21 +39,25 @@ namespace Writer
                 {
                     var writer = factory.GetWriter(FormaterOptions.Json);
                     Console.WriteLine(writer.Write(nombre));
+                    writer.RenameFile(nombre);
                 }
                 else if(formatString == "plain")
                 {
                     var writer = factory.GetWriter(FormaterOptions.Plain);
                     Console.WriteLine(writer.Write(nombre));
+                    writer.RenameFile(nombre);
                 }
                 else if (formatString == "xml")
                 {
                     var writer = factory.GetWriter(FormaterOptions.Xml);
                     Console.WriteLine(writer.Write(nombre));
+                    writer.RenameFile(nombre);
                 }
                 else if (formatString == "yml")
                 {
                     var writer = factory.GetWriter(FormaterOptions.Yml);
                     Console.WriteLine(writer.Write(nombre));
+                    writer.RenameFile(nombre);
                 }
 
                 

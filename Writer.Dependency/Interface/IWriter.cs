@@ -7,5 +7,6 @@ namespace Writer.Dependency.Interface
     public interface IWriter
     {
         public string Write(string msg);
+        public void RenameFile(string msg);
     }
 }
