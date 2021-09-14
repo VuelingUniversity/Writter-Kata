@@ -1,0 +1,14 @@
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.csproj.AssemblyReference.cache
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.AssemblyInfoInputs.cache
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.AssemblyInfo.cs
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.csproj.CoreCompileInputs.cache
+C:\Users\pblanco\source\repos\Writter\Writter\bin\Debug\netcoreapp3.1\Writter.exe
+C:\Users\pblanco\source\repos\Writter\Writter\bin\Debug\netcoreapp3.1\Writter.deps.json
+C:\Users\pblanco\source\repos\Writter\Writter\bin\Debug\netcoreapp3.1\Writter.runtimeconfig.json
+C:\Users\pblanco\source\repos\Writter\Writter\bin\Debug\netcoreapp3.1\Writter.runtimeconfig.dev.json
+C:\Users\pblanco\source\repos\Writter\Writter\bin\Debug\netcoreapp3.1\Writter.dll
+C:\Users\pblanco\source\repos\Writter\Writter\bin\Debug\netcoreapp3.1\Writter.pdb
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.dll
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.pdb
+C:\Users\pblanco\source\repos\Writter\Writter\obj\Debug\netcoreapp3.1\Writter.genruntimeconfig.cache
