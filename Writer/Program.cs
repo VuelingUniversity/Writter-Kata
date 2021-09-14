@@ -6,7 +6,7 @@ using Writer.Dependency.Models.Enums;
 
 namespace Writer
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {

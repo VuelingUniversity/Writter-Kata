@@ -17,8 +17,8 @@ namespace Writer.Dependency.Models
             { FormaterOptions.Xml, new FormaterXml()},
             {FormaterOptions.Yml, new FormaterYml() }
         };
-        private readonly IFactory _factory;
 
+        private readonly IFactory _factory;
 
         public Container(string type)
         {
