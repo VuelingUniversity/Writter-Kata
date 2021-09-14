@@ -14,14 +14,11 @@ namespace Writer.Dependency.Models
             this.formater = formater;
         }
 
-        public object Write(string msg)
+        public string Write(string msg)
         {
             return $"{msg}{formater.GetFormater()}";
         }
 
-        string IWriter.Write(string msg)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

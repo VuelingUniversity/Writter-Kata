@@ -8,7 +8,7 @@ using Writer.Dependency.Models.Formaters;
 
 namespace Writer.Dependency
 {
-    public class WriterProvider
+    public class Container
     {
         private readonly Dictionary<FormaterOptions, IFormater> _dictFormaters = new Dictionary<FormaterOptions, IFormater>
         {
@@ -20,7 +20,7 @@ namespace Writer.Dependency
         private IFactory _factoryObject;
 
 
-        public WriterProvider(string type)
+        public Container(string type)
         {
             if (type == "cloud")
             {

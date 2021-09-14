@@ -5,22 +5,19 @@ using Writer.Dependency.Interface;
 using Writer.Dependency.Models.Enums;
 
 
-//namespace Writer.Dependency
-//{
-// todo me sale mal
-//public class FactoryWriterLocal : IFactory
-//{
-//    private Dictionary<FormaterOptions, IFormater> _formatersDicts;
+namespace Writer.Dependency.Models
+{
+    public class FactoryWriterLocal : IFactory
+    {
+        private Dictionary<FormaterOptions, IFormater> _format;
+        public FactoryWriterLocal(Dictionary<FormaterOptions, IFormater> d)
+        {
+            _format = d;
+        }
+        public IWriter GetWriter(FormaterOptions options)
+        {
+            return new Writer(_format[options]);
+        }
+        }
+    }
 
-//    public FactoryWriterLocal(Dictionary<FormaterOptions, IFormater> dic)
-//    {
-//        _formatersDicts = dic;
-//    }
-//si comento la ult linea tb me da error
-//public IWriter GetWriter(FormaterOptions option)
-//{
-//no encuentro el porque me da error
-//return new Writer(_formatersDicts[option]);
-//}
-//    }
-//}

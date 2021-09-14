@@ -8,7 +8,7 @@ namespace Writer.Dependency.Models
 {
     public class FactoryWriterCloud : IFactory
     {
-        private Dictionary<FormaterOptions, IFormater> _formatersDicts;
+        private  Dictionary<FormaterOptions, IFormater> _formatersDicts;
 
         public FactoryWriterCloud(Dictionary<FormaterOptions, IFormater> dic)
         {

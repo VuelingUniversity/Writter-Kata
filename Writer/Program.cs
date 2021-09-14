@@ -22,7 +22,7 @@ namespace Writer
                     Console.WriteLine("Lo has escrito mal: (cloud/local)");
                     res = Console.ReadLine();
                 }
-                var factory = new WriterProvider(res).GetFactory();
+                var factory = new Container(res).GetFactory();
 
                 Console.WriteLine("Que nombre le quieres poner al archivo");
                 string nombre = Console.ReadLine();
