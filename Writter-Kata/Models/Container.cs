@@ -17,10 +17,10 @@ namespace Writter_Kata
         
         public Container(int option )
         {
-            Factory = IsCloud(option);
+            Factory = IsCloudLocal(option);
         }
 
-        private IFactoryable IsCloud(int option)
+        private IFactoryable IsCloudLocal(int option)
         {
             if (option == 2)
             {

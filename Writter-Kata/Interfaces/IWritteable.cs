@@ -6,6 +6,7 @@ namespace Writter_Kata.Interfaces
 {
     public interface IWritteable
     {
-        void Write(string fileName);
+        void Write(List<String> filesNames, string directory);
+        void FormatAndMove(string to, string from);
     }
 }
